@@ -1,0 +1,21 @@
+@import "h5bp";
+@include h5bp-helpers;
+@include h5bp-chromeframe;
+@include h5bp-media;
+
+
+@font-face{ 
+  font-family: "DSDIGI";
+  src: url('http://fontsforweb.com/public/fonts/1091/DSDIGI.eot');
+  src: local("DS-Digital"), url('http://fontsforweb.com/public/fonts/1091/DSDIGI.ttf') format("truetype");
+}
+
+#timer{
+  font-family: "DSDIGI";
+  font-size: 72px;
+  display: block;
+}
+
+#pause,#continue,#save{
+  display: none;
+}
