@@ -1,5 +1,11 @@
 $(document).ready(function() {
   var interval;
+  if($("#timerstarted")) {
+    $("#start,#continue,#save").css('display','none');
+    $("#pause").css('display','inline-block');
+    interval = setInterval(addSeconds, 1000);
+  };
+  
   $("#start,#continue").on('click',function() {
     $("#start,#continue,#save").css('display','none');
     $("#pause").css('display','inline-block');
